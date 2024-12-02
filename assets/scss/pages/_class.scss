@@ -1,0 +1,97 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  .navigation_Links {
+    padding-inline-end: 20px;
+    display: flex;
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0 20px 0 20px;
+      color: #666;
+      font-size: 14px;
+      &:hover {
+        color: #000;
+        background-color: #f6f5f5;
+      }
+    }
+  }
+  .navigation_Icon {
+    display: flex;
+    font-size: 18px;
+    gap: 30px;
+    align-items: center;
+    color: #666;
+  }
+}
+
+.bp {
+  background-color: #36474f;
+  max-width: 850px;
+  margin: 10px auto 20px auto;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  h1 {
+    bottom: 10px;
+    left: 10px;
+    font-size: 34px;
+    position: absolute;
+    color: #fff;
+  }
+}
+
+.googleAnd {
+  display: flex;
+  gap: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  .yaklasan {
+    height: fit-content;
+    padding: 70px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .course {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .courseBox {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f6f5f5;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
