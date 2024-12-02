@@ -1,1 +1,141 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.hamburger_class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hamburger_class i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.google_apps {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.google_apps i {
+  font-size: 25px;
+}
+
+.gmail {
+  height: 35px;
+  width: 35px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.class_logo {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home_pg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home_pg i {
+  font-size: 20px;
+}
+
+.class_pg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.settings i {
+  font-size: 20px;
+}
+
+.hidden {
+  width: 80px !important;
+}
+.hidden .text {
+  display: none;
+}
+
+.sidenavbar {
+  width: 300px;
+  padding-top: 61px;
+  height: calc(100vh - 61px);
+  border-right: 1px solid #ddd;
+  display: block;
+}
+
+.pages {
+  border-bottom: 1px solid #ddd;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.settings {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.sidenavbar_short {
+  width: 100px;
+  padding-top: 61px;
+  height: calc(100vh - 61px);
+  border-right: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 550px) {
+  .google_apps {
+    display: none;
+  }
+  .sidenavbar_short {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

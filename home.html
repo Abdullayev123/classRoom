@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <!-- NAVBAR START -->
+    <div class="navbar">
+      <div class="hamburger_class">
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <img
+          src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPG1hc2sgaWQ9ImEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjQiIHk9IjExIiB3aWR0aD0iMTAwIiBoZWlnaHQ9Ijg2Ij4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOTYuNzUgMTEuMjVoLTg1LjVjLTMuNzMgMC02Ljc1IDMuMDItNi43NSA2Ljc1djcyYzAgMy43MjkgMy4wMiA2Ljc1IDYuNzUgNi43NWg4NS41YzMuNzI5IDAgNi43NS0zLjAyMSA2Ljc1LTYuNzVWMThjMC0zLjczLTMuMDIxLTYuNzUtNi43NS02Ljc1eiIgZmlsbD0iI2ZmZiIvPgogIDwvbWFzaz4KICA8ZyBtYXNrPSJ1cmwoI2EpIj4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAyMC4yNWg4MXY2Ny41aC04MXYtNjcuNXoiIGZpbGw9IiMwRjlENTgiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzYgNTYuMjVhNS4wNjMgNS4wNjMgMCAxMDAtMTAuMTI2IDUuMDYzIDUuMDYzIDAgMDAwIDEwLjEyNnptNDEuMDYzLTUuMDYzYTUuMDYzIDUuMDYzIDAgMTEtMTAuMTI2IDAgNS4wNjMgNS4wNjMgMCAwMTEwLjEyNiAwek02MC43NSA2Ni4wNTVjMC0zLjU1NSA1LjgyOC02LjQyOSAxMS4yNS02LjQyOXMxMS4yNSAyLjg3NCAxMS4yNSA2LjQzdjMuNjk1aC0yMi41di0zLjY5NnptLTM2IDBjMC0zLjU1NSA1LjgyOC02LjQyOSAxMS4yNS02LjQyOSA1LjQyMyAwIDExLjI1IDIuODc0IDExLjI1IDYuNDN2My42OTVoLTIyLjV2LTMuNjk2eiIgZmlsbD0iIzU3QkI4QSIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MC43NSA0NS4wMDFjMCAzLjczLTMuMDIgNi43NS02Ljc0NCA2Ljc1YTYuNzUzIDYuNzUzIDAgMDEtNi43NTYtNi43NSA2Ljc1NiA2Ljc1NiAwIDAxNi43NTYtNi43NWMzLjcyMyAwIDYuNzQ0IDMuMDI2IDYuNzQ0IDYuNzV6bS0yMi41IDIwLjI1YzAtNC45NzMgOC4xNTYtOSAxNS43NS05IDcuNTk0IDAgMTUuNzUgNC4wMjcgMTUuNzUgOXY0LjVoLTMxLjV2LTQuNXoiIGZpbGw9IiNGN0Y3RjciLz4KICAgIDxwYXRoIG9wYWNpdHk9Ii4yIiBmaWxsPSJ1cmwoI3BhdHRlcm4wKSIgZD0iTTU5LjYyNSA3OS44NzZoMjd2MTEuMzRoLTI3eiIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MyA4My4yNTFoMjAuMjV2NC41SDYzdi00LjV6IiBmaWxsPSIjRjFGMUYxIi8+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjI1IDExLjI1aDg1LjVjMy43MjkgMCA2Ljc1IDMuMDIgNi43NSA2Ljc1djcyYzAgMy43MjktMy4wMjEgNi43NS02Ljc1IDYuNzVoLTg1LjVjLTMuNzMgMC02Ljc1LTMuMDIxLTYuNzUtNi43NVYxOGMwLTMuNzMgMy4wMi02Ljc1IDYuNzUtNi43NXptMi4yNSA3Ni41aDgxdi02Ny41aC04MXY2Ny41eiIgZmlsbD0iI0Y0QjQwMCIvPgogICAgPHBhdGggb3BhY2l0eT0iLjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOTYuNzUgMTEuMjVoLTg1LjVjLTMuNzMgMC02Ljc1IDMuMDItNi43NSA2Ljc1di41NjJjMC0zLjczIDMuMDItNi43NSA2Ljc1LTYuNzVoODUuNWMzLjcyOSAwIDYuNzUgMy4wMiA2Ljc1IDYuNzV2LS41NjNjMC0zLjcyOS0zLjAyMS02Ljc1LTYuNzUtNi43NXoiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIG9wYWNpdHk9Ii4yIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTk2Ljc1IDk2LjE4OGgtODUuNWMtMy43MyAwLTYuNzUtMy4wMjEtNi43NS02Ljc1VjkwYzAgMy43MyAzLjAyIDYuNzUgNi43NSA2Ljc1aDg1LjVjMy43MjkgMCA2Ljc1LTMuMDIgNi43NS02Ljc1di0uNTYzYzAgMy43My0zLjAyMSA2Ljc1LTYuNzUgNi43NXoiIGZpbGw9IiNCRjM2MEMiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODMuMjE2IDg3Ljc1aC0yMC4yNWw4Ljk5NSA5aDIwLjIzOGwtOC45ODMtOXoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcikiLz4KICAgIDxwYXRoIG9wYWNpdHk9Ii4yIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjUgMTkuNjg3aDgxdi41NjNoLTgxdi0uNTYzeiIgZmlsbD0iIzI2MzIzOCIvPgogIDwvZz4KICA8bWFzayBpZD0iYiIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iNCIgeT0iMTEiIHdpZHRoPSIxMDAiIGhlaWdodD0iODYiPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05Ni43NSAxMS4yNWgtODUuNWMtMy43MyAwLTYuNzUgMy4wMi02Ljc1IDYuNzV2NzJjMCAzLjcyOSAzLjAyIDYuNzUgNi43NSA2Ljc1aDg1LjVjMy43MjkgMCA2Ljc1LTMuMDIxIDYuNzUtNi43NVYxOGMwLTMuNzMtMy4wMjEtNi43NS02Ljc1LTYuNzV6IiBmaWxsPSIjZmZmIi8+CiAgPC9tYXNrPgogIDxnIG1hc2s9InVybCgjYikiPgogICAgPHBhdGggb3BhY2l0eT0iLjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSA4Ny43NWg4MXYuNTYzaC04MXYtLjU2M3oiIGZpbGw9IiNmZmYiLz4KICA8L2c+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05Ni43NSAxMS4yNWgtODUuNWMtMy43MyAwLTYuNzUgMy4wMi02Ljc1IDYuNzV2NzJjMCAzLjcyOSAzLjAyIDYuNzUgNi43NSA2Ljc1aDg1LjVjMy43MjkgMCA2Ljc1LTMuMDIxIDYuNzUtNi43NVYxOGMwLTMuNzMtMy4wMjEtNi43NS02Ljc1LTYuNzV6IiBmaWxsPSJ1cmwoI3BhaW50MV9yYWRpYWwpIi8+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWwiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMTE4LjI0MSAwIDAgMTAyLjExOCA3Ljg3NSAxMy4yNTQpIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjAxIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iNjMuMDE1IiB5MT0iODcuODc1IiB4Mj0iNjMuMDE1IiB5Mj0iOTYuODQ0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNCRjM2MEMiIHN0b3Atb3BhY2l0eT0iLjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQkYzNjBDIiBzdG9wLW9wYWNpdHk9Ii4wMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJwYXR0ZXJuMCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTAiIHRyYW5zZm9ybT0ic2NhbGUoLjAwNDkgLjAxMTM2KSIvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KPC9zdmc+Cg=="
+          alt="">
+        <h3>CLASS</h3>
+      </div>
+      <div class="google_apps">
+        <i class="fa-solid fa-braille"></i>
+        <div class="gmail">
+          <h2>n</h2>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+  </nav>
+
+  <main>
+    <!-- SIDE NAVBAR START-->
+    <div class="sidenavbar hidden">
+      <div class="pages">
+        <div class="home_pg">
+          <i class="fa-solid fa-house"></i>
+          <h3 class="text">Home Page</h3>
+        </div>
+        <div class="class_pg">
+          <div class="class_logo">
+            <h3 >B</h3>
+          </div>
+          <h3 class="text">BP216</h3>
+        </div>
+      </div>
+
+      <div class="settings">
+        <i class="fa-solid fa-gear"></i>
+        <h3 class="text">Settings</h3>
+      </div>
+    </div>
+    <!-- SIDE NAVBAR END  -->
+
+  </main>
+
+
+
+
+
+  <script src="assets/js/navbar.js"></script>
+</body>
+
 </html>
