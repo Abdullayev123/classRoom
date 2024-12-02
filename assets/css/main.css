@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 img {
@@ -13,6 +20,7 @@ nav {
   width: 100%;
   border-bottom: 1px solid #ddd;
   position: fixed;
+  z-index: 100;
   background-color: white;
 }
 
@@ -104,6 +112,9 @@ nav {
   height: calc(100vh - 61px);
   border-right: 1px solid #ddd;
   display: block;
+  position: fixed;
+  z-index: 90;
+  background-color: #fff;
 }
 
 .pages {
@@ -135,20 +146,13 @@ nav {
   .google_apps {
     display: none;
   }
-  .sidenavbar_short {
+  .sidenavbar {
     display: none;
   }
-}@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
-
-* {
-  font-family: "Roboto Condensed", sans-serif;
+.main {
+  padding-inline: 101px 20px;
+  padding-top: 61px;
 }
 
 .navigation {
@@ -245,4 +249,20 @@ nav {
   background-color: #f6f5f5;
   padding: 10px;
   border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+  .main {
+    padding: 81px 0;
+  }
+  .googleAnd {
+    padding-inline: 20px;
+    flex-direction: column;
+  }
+  .navigation {
+    justify-content: center;
+  }
+  .navigation .navigation_Icon {
+    display: none !important;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,7 @@
+.main {
+  padding-inline: 101px 20px;
+  padding-top: 61px;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -92,6 +96,21 @@
       background-color: #f6f5f5;
       padding: 10px;
       border-radius: 10px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .main {
+    padding: 81px 0;
+  }
+  .googleAnd {
+    padding-inline: 20px;
+    flex-direction: column;
+  }
+  .navigation {
+    justify-content: center;
+    .navigation_Icon {
+      display: none !important;
     }
   }
 }
